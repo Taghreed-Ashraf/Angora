@@ -1,0 +1,774 @@
+/* -----General--------*/
+:root {
+  --main-color:#F25454;
+}
+
+.main-background {
+  background-color: var(--main-color , blue);
+}
+
+.main-color {
+  color: var(--main-color , blue);
+}
+@font-face {
+  font-family: 'OpenSans-400';
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans-600';
+  src: url(../fonts/Open_Sans/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans-700';
+  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'popins-400';
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'popins-500';
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'popins-600';
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'popins-700';
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+/*--------------Navbar-------------*/
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 15px  rgb(31 31 31 / 7%);
+  z-index: 50;
+
+}
+.navbar-toggler {
+  padding: 0;
+  font-size: 22px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+
+}
+
+.navbar .navbar-brand img {
+  width: 30px;
+}
+
+.navbar .navbar-brand  {
+  font-size: 20px;
+  font-family: 'popins-700';
+  letter-spacing: 4px;
+}
+
+.navbar .nav-link {
+  transition: all 1s;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 13px;
+  font-family: 'popins-600';
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: var(--main-color , blue) !important;
+}
+
+.navbar .nav-socail i:hover {
+  color: var(--main-color , blue);
+}
+
+/*--------------Start Section One (Header)-------------*/
+header .carousel-inner .img {
+  background-size: cover;
+  background-position: center center;
+}
+
+header .setting {
+  top: 22%;
+  left: 0;
+  z-index: 99999;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+header .carousel-inner .img-back-1 {
+  background-image: url(../image/slideshow-1.jpg);
+}
+
+header .carousel-inner .img-back-2 {
+  background-image: url(../image/slideshow-2.jpg);
+}
+
+header .carousel-inner .img-back-3 {
+  background-image: url(../image/slideshow-3.jpg);
+}
+
+header .carousel-inner .carousel-caption {
+  bottom: 35% !important;
+}
+
+header .carousel-inner .carousel-caption h2 {
+  font-size: 70px;
+  font-family: 'popins-700';
+}
+
+.button-1,
+.button-2 {
+  background-color: transparent;
+  width:50px;
+  height: 50px;
+  top: 40%;
+  left: 0;
+  border: 1px white solid;
+  border-left:none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 5;
+}
+
+.button-2 {
+  top: 48%;
+  border-top: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  left: 40%;
+}
+
+.button-1 .sub-icon,
+.button-2 .sub-icon {
+  transition: all 0.5s;
+}
+
+.button-1:hover .sub-icon,
+.button-2:hover .sub-icon {
+  color: var(--main-color , blue) !important;
+}
+
+.layer-arrow {
+  right: 100%;
+  transition: all 0.5s;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.button-1:hover .layer-arrow,
+.button-2:hover .layer-arrow {
+  right: 0;
+} 
+
+
+header .brdr {
+  width: 30px;
+  height: 45px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  border:  solid 1px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+header .brdr:hover {
+  border-color: var(--main-color , blue);
+}
+
+header .brdr:hover .dot{
+  background-color: var(--main-color , blue);
+}
+
+header .brdr a .dot {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: move 1.5s infinite ;
+  transition: all 0.5s;
+}
+
+@keyframes move {
+  0%{ top:10px; opacity:1;}
+  100%{ top:30px; opacity:0;}
+}
+/*--------------End Section One (Header)-------------*/
+
+.title h2 {
+  font-family: 'popins-700';
+  font-size: 7rem; 
+  opacity: 0.08;
+}
+
+.title h3 {
+  font-family: 'popins-700';
+  color: #282828;
+  font-size: 38px;
+}
+
+.title::after {
+  content: "";
+  background-color: black;
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 1s;
+}
+
+.line:hover .title::after {
+  width: 60px;
+}
+
+.line p {
+  width: 60%;
+  font-family: 'OpenSans-400';
+  color: #999999;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/*--------------Start Section two (About)------------*/
+
+#about .about-left .text-left {
+  font-size: 15px;
+}
+
+#about .about-right .progress {
+  height: 4px !important;
+}
+
+#about .about-right .progress-bar {
+  background-color: var(--main-color , blue) !important;
+  animation: entry 2s;
+}
+
+@keyframes entry {
+  0% {transform: translateX(-405px);}
+  100% {transform: translateX(0);}
+}
+
+#about .about-right .prog {
+  font-family: 'OpenSans-600';
+  font-size: 14px;
+}
+
+#about .about-right .prog-1,
+#about .about-right .prog-3 {
+  width: 85%;
+}
+
+#about .about-right .prog-2 {
+  width: 95%;
+}
+
+#about .about-right .prog-4 {
+  width: 70%;
+}
+/*--------------End Section two (About)------------*/
+
+/* -----------Start Section three (team)------------ */
+
+#team .pic-top .layer-part {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-color: rgba(255, 0, 0, 0.6);
+  transition: all 0.5s ;
+}
+
+#team .pic-top:hover .layer-part {
+opacity: 1;
+}
+
+#team .pic-top img {
+  transition: all 0.5s;
+}
+
+#team .pic-top:hover img {
+  transform: scale(1.1);
+}
+
+#team .pic-top .text-bottom .text {
+  font-family: 'popins-600';
+}
+
+#team .pic-top .text-bottom .text-2 {
+  font-family: 'OpenSans-400';
+  font-size: 14px;
+}
+
+#team .pic-top:hover .text {
+  color: var(--main-color , blue);
+}
+/* -----------End Section three (team)------------ */
+
+
+/* ------------Start Section four (ideas)------------ */
+#ideas .text-3 {
+  font-size: 32px;
+  font-family: 'popins-400';
+}
+
+#ideas button {
+  font-size: 14px;
+  font-family: 'OpenSans-700';
+  padding: 13px 30px;
+  transition: all 0.5s;
+}
+
+#ideas button:hover {
+  background-color: #f38383;
+}
+/* ------------End Section four (ideas)------------ */
+
+/* ------------Start Section Five (Services)---------- */
+#services,
+#toutch{
+  background-color: #FAFAFA;
+}
+
+#services ul li i {
+  font-size: 30px;
+}
+
+#services .serv-part ul li {
+  font-family: 'popins-600';
+  font-size: 18px;
+  transition: all 0.5s;
+}
+
+#services .serv-part p {
+  font-size: 14px;
+  font-family: 'OpenSans-400';
+  line-height: 28px;
+}
+
+#services .serv-part:hover li {
+  color: var(--main-color , blue) !important;
+}
+
+/* ------------End Section Five (Services)---------- */
+
+/* ------------Start Section Six (Client)----------- */
+
+#client .carousel-indicators [data-bs-target] {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  text-indent: 0;
+}
+
+.carousel-indicators .active {
+  display: block;
+  transform: scale(1.2);
+}
+
+.hide {
+  display: none;
+}
+
+#client  .carousel-indicators {
+width: 50% !important;
+margin: auto;
+overflow: hidden;
+margin: auto;
+}
+
+#client .carousel-item h4 {
+  color: #282828;
+  font-family: 'popins-600';
+  font-size: 16px;
+}
+
+#client .carousel-item span {
+  color: #666666;
+  font-family: 'OpenSans-400';
+  font-size: 14px;
+}
+
+#client .carousel-item p {
+  width: 65%;
+  color: #666666;
+  font-family: 'OpenSans-400';
+  font-size: 25px;
+}
+
+
+
+/* ------------End Section Six (Client)----------- */
+
+/* ------------Start Section Seven (Toutch)----------- */
+#toutch .toutch-left h2 {
+  font-size: 32px;
+  font-family: 'popins-600';
+}
+
+#toutch .toutch-left ul li  {
+  font-size: 18px;
+  font-family: 'popins-600';
+  transition: all 0.5s;
+}
+
+#toutch .toutch-left p  {
+  font-size: 14px;
+  font-family: 'OpenSans-400';
+}
+
+#toutch .toutch-left ul li i {
+  font-size: 30px;
+}
+
+#toutch .toutch-left .toutch-mouse:hover li {
+  color: var(--main-color , blue);
+}
+
+#toutch .toutch-left .text-5 {
+  width: 30%;
+  transition: all 0.5s;
+}
+
+#toutch .toutch-left .text-5:hover {
+  color: var(--main-color , blue) !important;
+}
+
+#toutch .toutch-right input {
+  padding: 13px;
+  border: 2px solid #eee;
+}
+
+#toutch .toutch-right input:focus,
+#toutch .toutch-right textarea:focus {
+  box-shadow: none;
+  border-color: var(--main-color , blue);
+}
+
+#toutch .toutch-right textarea {
+  border: 2px solid #eee;
+}
+
+#toutch .toutch-right button {
+  padding: 15px 20px;
+  font-size: 14px;
+  font-family: 'OpenSans-700';
+  transition: all 0.5s;
+}
+
+#toutch .toutch-right button:hover {
+  background-color: #f38383;
+}
+/* ------------End Section Seven (Toutch)----------- */
+
+
+/* ------------Start Section eight (contact)---------- */
+#contact {
+  background-image: url(../image/dotted-map.png);
+  background-size: contain;
+  background-color: #222;
+}
+
+#contact .circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(242, 84, 84, 0.5);
+  transition: all 0.5s;
+}
+
+#contact .circle:hover {
+  background-color: var(--main-color , blue);
+}
+
+#contact .contact h5 {
+  font-size: 20px;
+  font-family: 'popins-600';
+}
+
+#contact .contact-4 ul li {
+  border: 1px solid #b0b0b0;
+  border-radius: 3px;
+  padding: 4px 7px;
+  transition: all 0.5s;
+}
+
+#contact .contact-1 p,
+#contact .contact-4 ul li a,
+#contact .contact-2 ul li a,
+#contact .contact-3 ul li a {
+font-size: 14px;
+font-family: 'popins-400';
+color: #b0b0b0;
+}
+
+#contact .contact-4 ul li a {
+  font-size: 13px;
+}
+
+#contact .contact-4 ul li:hover {
+  border-color: var(--main-color , blue);
+}
+
+#contact .contact-2 ul li a,
+#contact .contact-3 ul li a,
+#contact .contact-4 ul li a {
+  transition: all 0.5s;
+}
+
+#contact .contact-2 ul li:hover a,
+#contact .contact-3 ul li:hover a,
+#contact .contact-4 ul li:hover a {
+  color: var(--main-color , blue) !important;
+}
+
+#contact .contact-1 span {
+  width: 30%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#contact .contact-1 span:hover {
+  color: var(--main-color , blue) !important;
+}
+/* ------------End Section eight (contact)---------- */
+
+
+/* ------------Start Section nine (footer)------------ */
+footer {
+  background-color: #1A1A1A;
+}
+
+footer .icons-1 i {
+  transition: all 0.5s;
+}
+
+footer .icons-1 i:hover {
+  color: var(--main-color , blue);
+}
+
+footer .content p {
+  color: #b0b0b0;
+  font-size: 14px;
+  font-family: 'popins-400';
+}
+
+footer .content p a {
+  font-size: 14px;
+  font-family: 'popins-600';
+  transition: all 0.5s;
+}
+
+footer .content p a:hover {
+  color: var(--main-color , blue) !important;
+}
+
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  color: #F25454;
+}
+/* ------------End Section nine (footer)------------ */
+
+
+
+
+/*----------------------Media Query-------------------*/
+
+@media screen and (max-width:568px) {
+  .navbar {
+    padding-right: 0 !important;
+  }
+
+  .navbar ul {
+    background-color: white !important;
+  }
+
+  .navbar ul li a {
+    color: #1A1A1A !important;
+    padding: 0 !important;
+    padding-left: 10px !important;
+    padding-bottom: 5px !important;
+  }
+
+  .navbar ul li .specail {
+    color: var(--main-color ,blue) !important;
+  }
+
+  header .carousel-inner .carousel-caption h2 {
+    font-size: 30px;
+  }
+
+  header .brdr,
+  header .setting {
+    visibility: hidden;
+  }
+
+  .line p {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  #about .progress {
+    margin-left: 0 !important;
+  }
+
+  .title h3 {
+    font-size: 28px;
+  }
+
+  .title .min {
+    font-size: 20px !important;
+  }
+
+  #team {
+    padding: 0px 0 !important;
+  }
+
+
+  #ideas .text-3 {
+    text-align: center;
+  }
+
+  #ideas .text-3 p {
+    font-size: 20px;
+  }
+
+  #ideas button {
+    padding: 5px 10px;
+  }
+
+  #client .specail-2, 
+  #toutch .specail-2 {
+    font-size: 30px;
+  }
+
+  
+  #client .carousel-item p {
+    width: 80% !important;
+    font-size: 18px;
+  }
+
+  #client  .carousel-indicators {
+    width: 80% !important;
+  }
+
+  #toutch .text-6 {
+    font-size: 20px !important;
+    padding-left: 10px !important;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .icons-1,
+  footer .content {
+    width: 100% !important;
+  }
+
+  footer .content {
+    padding-left: 0 !important;
+    margin-top: 10px;
+  }
+
+  footer .content p {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (min-width:569px) and (max-width:768px) {
+
+  .navbar {
+    padding-right: 0 !important;
+  }
+
+
+  .navbar ul {
+    background-color: white !important;
+  }
+
+  .navbar ul li a {
+    color: #1A1A1A !important;
+    padding: 0 !important;
+    padding-left: 10px !important;
+    padding-bottom: 5px !important;
+  }
+
+  .navbar ul li .specail {
+    color: var(--main-color ,blue) !important;
+  }
+
+  header .carousel-inner .carousel-caption h2 {
+    font-size: 30px;
+  }
+
+
+  #client .carousel-item p {
+    width: 80% !important;
+    font-size: 18px;
+  }
+
+  #client  .carousel-indicators {
+    width: 100% !important;
+  }
+    
+  #client .carousel-item p {
+    width: 80% !important;
+    font-size: 18px;
+  }
+
+  #client  .carousel-indicators {
+    width: 80% !important;
+  }
+
+  footer .icons-1,
+footer .content {
+  width: 50% !important;
+}
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+
+  #client  .carousel-indicators {
+    width: 100% !important;
+  }
+    
+  #client .carousel-item p {
+    width: 80% !important;
+    font-size: 18px;
+  }
+
+  #client  .carousel-indicators {
+    width: 80% !important;
+  }
+footer .icons-1,
+footer .content {
+  width: 50% !important;
+}
+
+}
